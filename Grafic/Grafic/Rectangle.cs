@@ -5,12 +5,7 @@ using System.Text;
 namespace Grafic
 {
     class Rectangle : Square
-    {
-        ConsoleColor Color;
-        char Symbol;
-        int Lenght;
-        int X;
-        int Y;
+    {        
         int Widht;
         public Rectangle(ConsoleColor _color, char _symbol, int _lenght, int _x, int _y, int _widht) : base(_color, _symbol, _lenght, _x, _y)
         {

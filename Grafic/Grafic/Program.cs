@@ -9,9 +9,9 @@ namespace Grafic
             Triangle triangle;
             Rectangle rectangle;
             Square square;
-            int counter = 0;
             int counter1 = 0;
-            while(counter != 1)
+            bool success = false;
+            while(success != true)
             {
                 Console.ForegroundColor = ConsoleColor.White;              
                 Console.SetCursorPosition(0, 0);
@@ -86,7 +86,7 @@ namespace Grafic
                     {
                         Console.SetCursorPosition(0, 2);
                         Console.WriteLine("Ошибка! Фигура выходит за рамки консоли!" +
-                            " Координата должна быть больше длины, введите координату заново ");
+                            " Координата должна быть больше длины, введите координату заново. Нажмите Enter");
                         Console.ReadLine();
                         Console.SetCursorPosition(0, 2);
                         Console.Write("                                                       " +
@@ -137,7 +137,7 @@ namespace Grafic
                         square.Draw();
                         break;
                     case "stop":
-                        counter = 1;
+                        success = true;
                         break;
                 }
             }

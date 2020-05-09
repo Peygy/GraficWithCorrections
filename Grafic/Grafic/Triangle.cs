@@ -5,12 +5,7 @@ using System.Text;
 namespace Grafic
 {
     class Triangle : Form
-    {
-        ConsoleColor Color;
-        char Symbol;
-        int Lenght;
-        int X;
-        int Y;
+    {        
         public Triangle(ConsoleColor _color, char _symbol, int _lenght, int _x, int _y) : base(_color, _symbol, _lenght, _x, _y)
         {
             Color = _color;
